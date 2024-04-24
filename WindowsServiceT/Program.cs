@@ -11,8 +11,8 @@ builder.Services.AddWindowsService(options =>
 });
 
 
-/*LoggerProviderOptions.RegisterProviderOptions<
-    EventLogSettings, EventLogLoggerProvider>(builder.Services);*/
+LoggerProviderOptions.RegisterProviderOptions<
+    EventLogSettings, EventLogLoggerProvider>(builder.Services);
 
 
 builder.Services.AddSingleton<JokeService>();
